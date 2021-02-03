@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/credit_card/static/css/main.bdabccef.chunk.css",
+    "main.js": "/credit_card/static/js/main.1cc467f5.chunk.js",
+    "main.js.map": "/credit_card/static/js/main.1cc467f5.chunk.js.map",
+    "runtime-main.js": "/credit_card/static/js/runtime-main.971d87e7.js",
+    "runtime-main.js.map": "/credit_card/static/js/runtime-main.971d87e7.js.map",
+    "static/js/2.70828a06.chunk.js": "/credit_card/static/js/2.70828a06.chunk.js",
+    "static/js/2.70828a06.chunk.js.map": "/credit_card/static/js/2.70828a06.chunk.js.map",
+    "static/js/3.57324d3a.chunk.js": "/credit_card/static/js/3.57324d3a.chunk.js",
+    "static/js/3.57324d3a.chunk.js.map": "/credit_card/static/js/3.57324d3a.chunk.js.map",
+    "index.html": "/credit_card/index.html",
+    "static/css/main.bdabccef.chunk.css.map": "/credit_card/static/css/main.bdabccef.chunk.css.map",
+    "static/js/2.70828a06.chunk.js.LICENSE.txt": "/credit_card/static/js/2.70828a06.chunk.js.LICENSE.txt",
+    "static/media/1.92590951.png": "/credit_card/static/media/1.92590951.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.971d87e7.js",
+    "static/js/2.70828a06.chunk.js",
+    "static/css/main.bdabccef.chunk.css",
+    "static/js/main.1cc467f5.chunk.js"
+  ]
+}
