@@ -1,0 +1,145 @@
+.fon-block {
+  height: 959px;
+  background-color: rgb(109, 166, 252);
+  clip-path: polygon(107% -7%, 170% 30%, 0% 105%, 0% 40%);
+}
+
+.pay-block {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.pay-block__detail {
+  width: 42%;
+  align-items: center;
+  text-align: center;
+}
+
+.detail__headers {
+  margin-top: 130px;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+.detail__total-price {
+  color: rgb(109, 166, 252);
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-bottom: -80px;
+}
+
+.detail__gadgets {
+  margin-top: -5px;
+  color: rgb(122, 122, 122);
+  font-weight: bold;
+}
+
+.detail__gadget-container {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: 70px;
+}
+
+.detail__price {
+  margin-top: -5px;
+  color:rgb(109, 166, 252);
+  font-weight: bold;
+}
+
+.detail__button-pay {
+  width: 150px;
+  height: 45px;
+  margin-top: 50px;
+  border: 2px solid rgb(109, 166, 252);
+  border-radius: 20px;
+  color: rgb(109, 166, 252);
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.detail__button-pay:hover {
+  background-color: rgb(109, 166, 252);
+  color: #fff;
+  border: 1px solid rgb(112, 112, 255);
+}
+
+.credit-card {
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(112, 112, 255);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.5);
+}
+
+.credit-card__owner {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.credit-card__type {
+  display: absolute;
+  width: 110px;
+  margin-left: 330px;
+  margin-top: -85px;
+}
+
+.credit-card__number {
+  display: flex;
+  color: rgb(189, 189, 252);
+  margin-left: 45px;
+  margin-bottom: 7px;
+  margin-top: -5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-number:hover{
+  border: 2px solid rgb(76, 76, 155);
+}
+
+.credit-card__below-headers {
+  display: inline-block;
+  margin-right: 77px;
+  color: rgb(189, 189, 252);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+
+.credit-card__below-headers:first-child {
+  margin-right: 220px;
+}
+
+.credit-card__below-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 38px;
+  width: 380px;
+}
+
+#cardNumber:hover,
+#date:hover,
+#cvv:hover {
+  border: 2px solid rgb(76, 76, 155);
+}
