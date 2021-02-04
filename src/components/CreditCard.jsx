@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import "./CreditCard.css";
 import visa from '../images/1.png'
 import { InputNumber, InputCVV, InputDate } from './InputStyles.jsx';
@@ -6,12 +6,13 @@ import { InputNumber, InputCVV, InputDate } from './InputStyles.jsx';
 export const CreditCard = () => {
     const [cardNumber, setCardNumber] = useState('');
     const [CVV, setCVV] = useState('');
+    const [date, setDate] = useState('');
     const [isCardNumber, setIsCardNumber] = useState(false);
     const [isCVV, setIsCVV] = useState(false)
-    const [date, setDate] = useState('');
     const [isDate, setIsDate] = useState(null)
 
-    const isTrueCardNumber = e =>{
+
+    const isTrueCardNumber = useCallback((e) => {
         const {value} = e.target;
 
         value.length < 20 && setCardNumber(value
@@ -21,17 +22,17 @@ export const CreditCard = () => {
         value.match(/\d{4}([\s]|)\d{4}([\s]|)\d{4}([\s]|)\d{4}/) !== null &&
             value.startsWith('4') ?
             setIsCardNumber(true) : setIsCardNumber(false)
-    }
+    }, [cardNumber])
 
-    const isTrueCVV = e =>{
+    const isTrueCVV = useCallback((e) =>{
         const {value} = e.target;
 
         value.length <= 3 && setCVV(value)
 
         value.match(/\d{3}/)!==null ? setIsCVV(true) : setIsCVV(false)
-    }
+    }, [CVV])
 
-    const isTrueDate = e =>{
+    const isTrueDate = useCallback((e) =>{
         const {value} = e.target;
 
         value.length < 8 && setDate(value.length === 2 ? value + '/' : value)
@@ -44,12 +45,12 @@ export const CreditCard = () => {
 
         currentDate < inputDate && +month <= 12 && +year < 2026 ? 
             setIsDate(true) : setIsDate(false)
-    }
+    }, [date])
 
-    const pay = () => {
+    const pay = useCallback(() => {
         isCardNumber && isCVV && isDate ?
             alert("Successfully payed!") : alert("Input fields*")
-    }
+    },[cardNumber,date,CVV])
 
 
     return(
