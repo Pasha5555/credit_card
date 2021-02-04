@@ -43,7 +43,8 @@ export const CreditCard = () => {
             + Date.parse(new Date().getMonth());
         const inputDate = Date.parse(+month) + Date.parse(+year);
 
-        currentDate < inputDate && +month <= 12 && +year < 2026 ? 
+        currentDate < inputDate && +month <= 12 && 
+            +year < new Date().getFullYear() + 6 ? 
             setIsDate(true) : setIsDate(false)
     }, [date])
 
