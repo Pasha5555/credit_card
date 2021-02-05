@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { CreditCard } from './components/CreditCard.jsx';
+import { CreditCard } from './components/CreditCard';
 
 function App() {
   return (
@@ -8,6 +8,6 @@ function App() {
       <CreditCard />
     </div>
   );
-}//to be continue...
+}// to be continue...
 
 export default App;
